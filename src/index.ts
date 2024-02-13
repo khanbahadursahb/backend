@@ -9,13 +9,13 @@ import cors from "@koa/cors";
 import path from "path";
 import render from "koa-ejs";
 import serve from "koa-static";
-import logger from "./logger";
-import { connectDB } from "./src/configs/database";
-import { initializeCronJobs } from "./src/configs/cron-jobs";
-import { initializeSocket } from "./src/configs/socket";
-import { loadBlockchain } from "./src/utils/blockchain";
-import BlockchainConstants from "./src/constants/blockchain";
-import { userRouter } from "./src/features/user/user-routes";
+import logger from "../logger";
+import { connectDB } from "./configs/database";
+import { initializeCronJobs } from "./configs/cron-jobs";
+import { initializeSocket } from "./configs/socket";
+import { loadBlockchain } from "./utils/blockchain";
+import BlockchainConstants from "./constants/blockchain";
+import { userRouter } from "./features/user/user-routes";
 
 const app = new koa();
 
