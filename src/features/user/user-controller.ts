@@ -22,7 +22,7 @@ namespace UserController {
       // );
 
       ctx.body = {
-        response: "success",
+        response: "baloch",
         data: {},
       };
     } catch (error) {
@@ -39,7 +39,7 @@ namespace UserController {
   export const signIn = async (ctx: Context) => {
     try {
       ctx.body = {
-        response: "success",
+        response: "baloch",
         data: {},
       };
     } catch (error) {

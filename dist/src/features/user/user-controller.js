@@ -27,7 +27,7 @@ var UserController;
             //   { expiresIn: "1d" }
             // );
             ctx.body = {
-                response: "success",
+                response: "baloch",
                 data: {},
             };
         }
@@ -43,7 +43,7 @@ var UserController;
     UserController.signIn = (ctx) => __awaiter(this, void 0, void 0, function* () {
         try {
             ctx.body = {
-                response: "success",
+                response: "baloch",
                 data: {},
             };
         }
