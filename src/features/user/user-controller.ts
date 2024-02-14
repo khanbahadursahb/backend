@@ -8,6 +8,7 @@ import { RouterContext } from "koa-router";
 namespace UserController {
   export const signUp = async (ctx: RouterContext) => {
     try {
+      console.log("hello");
 
       // let body = ctx.request.body;
       // const secretKey = process.env.SECRET_KEY!;
