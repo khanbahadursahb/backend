@@ -5,6 +5,8 @@ let io: Server = new Server();
 
 let ticking = false;
 
+// trying redeploy
+
 export const initializeSocket = (server: any) => {
   console.log("socket initialized");
 
