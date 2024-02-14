@@ -26,9 +26,9 @@ const server = app.listen(process.env.PORT || 8080, () =>
   logger.info(`Server has started. http://localhost:${process.env.PORT}`)
 );
 
-// connectDB();
-// initializeCronJobs();
-// initializeSocket(server);
+connectDB();
+initializeCronJobs();
+initializeSocket(server);
 
 app.use(favicon(__dirname + '/public/favicon.ico'));
 
