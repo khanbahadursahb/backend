@@ -11,5 +11,6 @@ export const connectDB = async () => {
   } catch (error: any) {
     logger.error(error.message);
     process.exit(1);
+    //
   }
 };
