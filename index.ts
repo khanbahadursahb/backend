@@ -4,7 +4,7 @@ import koaRouter from "koa-router";
 import koa from "koa";
 import bodyParser from "koa-bodyparser";
 import cors from "@koa/cors";
-// import { router } from "./app/routes";
+import favicon from 'koa-favicon';
 
 import path from "path";
 import render from "koa-ejs";
@@ -30,7 +30,7 @@ const server = app.listen(process.env.PORT || 8080, () =>
 // initializeCronJobs();
 // initializeSocket(server);
 
-app.use(serve(path.join(__dirname, "./static")));
+app.use(favicon(__dirname + '/public/favicon.ico'));
 
 loadBlockchain(BlockchainConstants.RPC[5], 5);
 
