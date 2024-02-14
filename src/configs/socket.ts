@@ -71,7 +71,7 @@ const runArraysSocket = () => {
     io.emit("data", { main: mainArray, sub: secondaryArray });
   };
 
-  setInterval(tick, 100);
+  setInterval(tick, 2000);
 };
 
 export default io;
