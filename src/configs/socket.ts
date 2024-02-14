@@ -4,6 +4,8 @@ import env from "../constants/environment";
 let io: Server = new Server();
 
 export const initializeSocket = (server: any) => {
+  console.log("socket initialized");
+
   io = new Server(server, {
     cors: {
       origin: env.WHITE_LIST,
@@ -17,7 +19,8 @@ export const initializeSocket = (server: any) => {
 const channel = async () => {
   io.on("connection", async (socket) => {
     // Listen here
-    // socket.on("event", callback);
+    // socket.on("event", callback);\
+    console.log("connection established");
     runArraysSocket();
   });
 };
