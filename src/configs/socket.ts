@@ -3,6 +3,8 @@ import env from "../constants/environment";
 
 let io: Server = new Server();
 
+let ticking = false;
+
 export const initializeSocket = (server: any) => {
   console.log("socket initialized");
 
@@ -18,6 +20,9 @@ export const initializeSocket = (server: any) => {
 
 const channel = async () => {
   io.on("connection", async (socket) => {
+    if (ticking) return;
+
+    ticking = true;
     // Listen here
     // socket.on("event", callback);\
     console.log("connection established");
