@@ -22,7 +22,7 @@ const app = new koa();
 app.use(cors());
 app.use(bodyParser());
 
-const server = app.listen(process.env.PORT, () =>
+const server = app.listen(process.env.PORT || 8080, () =>
   logger.info(`Server has started. http://localhost:${process.env.PORT}`)
 );
 
